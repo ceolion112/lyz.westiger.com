@@ -1,0 +1,49 @@
+RewriteEngine On
+RewriteBase /
+
+# Trailing slash redirect
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+# Category pages
+RewriteRule ^xiulian\.html$ pages/xiulian.html [L]
+RewriteRule ^list/1\.html$ pages/1.html [L]
+RewriteRule ^daoju\.html$ pages/daoju.html [L]
+RewriteRule ^list/2\.html$ pages/2.html [L]
+RewriteRule ^news\.html$ pages/news.html [L]
+RewriteRule ^list/4\.html$ pages/4.html [L]
+RewriteRule ^job\.html$ pages/job.html [L]
+RewriteRule ^list/5\.html$ pages/5.html [L]
+RewriteRule ^list/7\.html$ pages/7.html [L]
+RewriteRule ^list/8\.html$ pages/8.html [L]
+RewriteRule ^list/9\.html$ pages/9.html [L]
+RewriteRule ^list/10\.html$ pages/10.html [L]
+RewriteRule ^list/11\.html$ pages/11.html [L]
+RewriteRule ^list/12\.html$ pages/12.html [L]
+RewriteRule ^list/13\.html$ pages/13.html [L]
+RewriteRule ^list/14\.html$ pages/14.html [L]
+RewriteRule ^list/15\.html$ pages/15.html [L]
+RewriteRule ^list/16\.html$ pages/16.html [L]
+RewriteRule ^list/17\.html$ pages/17.html [L]
+RewriteRule ^list/18\.html$ pages/18.html [L]
+RewriteRule ^list/19\.html$ pages/19.html [L]
+
+# Article detail pages
+RewriteRule ^news/1\.html$ pages/article/1.html [L]
+RewriteRule ^news/2\.html$ pages/article/2.html [L]
+RewriteRule ^news/3\.html$ pages/article/3.html [L]
+RewriteRule ^news/4\.html$ pages/article/4.html [L]
+RewriteRule ^news/5\.html$ pages/article/5.html [L]
+RewriteRule ^news/6\.html$ pages/article/6.html [L]
+RewriteRule ^news/7\.html$ pages/article/7.html [L]
+RewriteRule ^news/9\.html$ pages/article/9.html [L]
+RewriteRule ^news/10\.html$ pages/article/10.html [L]
+RewriteRule ^news/16\.html$ pages/article/16.html [L]
+RewriteRule ^news/11\.html$ pages/article/11.html [L]
+RewriteRule ^news/12\.html$ pages/article/12.html [L]
+RewriteRule ^news/13\.html$ pages/article/13.html [L]
+RewriteRule ^news/14\.html$ pages/article/14.html [L]
+RewriteRule ^news/15\.html$ pages/article/15.html [L]
+
+# Single pages
+RewriteRule ^about\.html$ pages/about.html [L]
+RewriteRule ^contact\.html$ pages/contact.html [L]
