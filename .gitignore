@@ -1,0 +1,14 @@
+# 构建脚本
+*.php
+
+# 数据缓存
+*.json
+
+# 项目约束文档
+/WANLAI.md
+
+# 模板源码
+/theme/templates/
+
+# SDCMS 模板片段
+/theme/2023/include/
