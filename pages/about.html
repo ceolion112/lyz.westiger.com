@@ -158,74 +158,72 @@
 
     .culture p {
         font-size: 24px;
-        border-bottom: 1px solid #ddd;
+
     }
 
-    @media only screen and (min-width: 768px) {
-
-        .p-product-kv-bottom {
-            margin: 6.125vw auto 0;
-        }
-
-        .p-product-kv-title {
-            white-space: nowrap;
-            margin-bottom: 2.9375vw;
-            font-size: 2.125vw;
-        }
-
-        .p-product-kv-text {
-            width: 100%;
-            font-size: calc(15 / var(--width) * 100vw);
-            line-height: 2.13;
-            margin-bottom: 20px;
-        }
-
-        .p-product-kv-text p {
-            margin-bottom: 20px;
-            font-size: calc(15 / var(--width) * 100vw);
-            text-align: justify;
-        }
-
-        .p-product-kv-text img {
-            padding: 40px 0;
-        }
-
-        .p-product-list-item-name {
-            font-size: 2vw;
-            margin-bottom: 3.8125vw;
-            margin-left: 2vw;
-        }
-
-        .p-product-list-item-name:before {
-            top: -.45vw;
-            font-size: .875vw;
-            left: -2.0625vw;
-        }
-
-        .p-product-list-item-name.item-name0:before {
-            content: "00";
-        }
-
-        .p-product-list-item-name.item-name1:before {
-            content: "01";
-        }
-
-        .p-product-list-item-name.item-name2:before {
-            content: "02";
-        }
-
-        .p-product-list-item-name.item-name3:before {
-            content: "03";
-        }
-
-        .p-product-list-item-name.item-name4:before {
-            content: "04";
-        }
-
-        .p-product-list-item-name.item-name5:before {
-            content: "05";
-        }
+    .p-product-kv-bottom {
+        margin: 6.125vw auto 0;
     }
+
+    .p-product-kv-title {
+        white-space: nowrap;
+        margin-bottom: 2.9375vw;
+        font-size: 2.125vw;
+    }
+
+    .p-product-kv-text {
+        width: 100%;
+        font-size: calc(15 / var(--width) * 100vw);
+        line-height: 2.13;
+        margin-bottom: 20px;
+    }
+
+    .p-product-kv-text p {
+        margin-bottom: 20px;
+        font-size: calc(15 / var(--width) * 100vw);
+        text-align: justify;
+    }
+
+    .p-product-kv-text img {
+        padding: 0;
+    }
+
+    .p-product-list-item-name {
+        font-size: 2vw;
+        margin-bottom: 3.8125vw;
+        margin-left: 2vw;
+    }
+
+    .p-product-list-item-name:before {
+        top: -.45vw;
+        font-size: .875vw;
+        left: -2.0625vw;
+    }
+
+    .p-product-list-item-name.item-name0:before {
+        content: "00";
+    }
+
+    .p-product-list-item-name.item-name1:before {
+        content: "01";
+    }
+
+    .p-product-list-item-name.item-name2:before {
+        content: "02";
+    }
+
+    .p-product-list-item-name.item-name3:before {
+        content: "03";
+    }
+
+    .p-product-list-item-name.item-name4:before {
+        content: "04";
+    }
+
+    .p-product-list-item-name.item-name5:before {
+        content: "05";
+    }
+
 
     .p-product-list-item-name {
         position: relative;
@@ -242,9 +240,45 @@
         width: 30%;
     }
 
+    .culture {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    .culture-item {
+        width: 23%;
+        text-align: center;
+    }
+
+    .p-product-kv-text .culture-item img {
+        padding: 0 !;
+        border-radius: 5%;
+    }
+
+    .culture-item h3 {
+        font-weight: bold;
+        margin-top: 20px;
+        font-size: 24px;
+    }
+
+    .p-product-kv-text .culture-item p {
+        font-size: 18px;
+        text-align: center;
+    }
+
     @media only screen and (max-width: 992px) {
-        #teams{
-           display: block;
+        .culture {
+            flex-direction: column;
+        }
+
+        .culture-item {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        #teams {
+            display: block;
             flex-direction: column;
         }
 
@@ -528,10 +562,26 @@
             <div class="section-space"></div>
             <h4 class="p-product-list-item-name item-name5 js__sc-point-item">宗门文化</h4>
             <div class="p-product-kv-text culture">
-                <p>宗门愿景：成为天南大陆永远的南波旺</p>
-                <p>宗门使命：让每个伪灵根都能修仙</p>
-                <p>宗门精神：念头通达、修炼至上</p>
-                <p>核心价值：做大做强、永续辉煌！</p>
+                <div class="culture-item">
+                    <img src="/theme/2023/images/culture1.webp" alt="">
+                    <h3>宗门愿景</h3>
+                    <p>成为天南大陆永远的南波旺</p>
+                </div>
+                <div class="culture-item">
+                    <img src="/theme/2023/images/culture2.webp" alt="">
+                    <h3>宗门使命</h3>
+                    <p>让每个伪灵根都能修仙</p>
+                </div>
+                <div class="culture-item">
+                    <img src="/theme/2023/images/culture3.webp" alt="">
+                    <h3>宗门精神</h3>
+                    <p>念头通达、修炼至上</p>
+                </div>
+                <div class="culture-item">
+                    <img src="/theme/2023/images/culture4.webp" alt="">
+                    <h3>核心口号</h3>
+                    <p>做大做强、永续辉煌</p>
+                </div>
             </div>
         </div>
         <div class="section-space"></div>
