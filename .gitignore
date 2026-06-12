@@ -4,10 +4,8 @@
 # 数据缓存
 *.json
 
-# 推送文件
-*.bat
 # 项目约束文档
-*.md
+/WANLAI.md
 
 # 模板源码
 /theme/templates/
