@@ -38,7 +38,7 @@ echo.
 
 REM ===== 第三步：推送 =====
 echo [3/3] 推送到 GitHub ...
-git push
+git push --set-upstream origin empty_branch
 if errorlevel 1 (
     echo.
     echo   ❌ 推送失败，请检查网络或 git 配置
