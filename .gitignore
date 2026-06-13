@@ -10,6 +10,12 @@
 # 项目约束文档
 *.md
 
+#其他不必要的文件
+*.ini
+404.html
+.htaccess
+*.config
+
 # 模板源码
 /theme/templates/
 
